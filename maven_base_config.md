@@ -1,10 +1,13 @@
 # 定义变量（可选， 也可以写死）
+```
 <properties>
     <jdk.ver>1.6</jdk.ver>
     <spring.ver>4.3.22.RELEASE</spring.ver>
 </properties>
+```
 
 # 各种依赖（可以引用变量）
+```
 <dependencies>
 	<dependency>
 	    <groupId>org.springframework</groupId>
@@ -19,8 +22,10 @@
       <scope>test</scope>
     </dependency>
 </dependencies>
+```
 
 # 编译时执行
+```
 <build>
     <finalName></finalName>
     <pluginManagement>
@@ -39,6 +44,7 @@
     <outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory>  
 	<testOutputDirectory>src/main/webapp/WEB-INF/test-classes</testOutputDirectory>
 </build>
+```
 
 ## configuration
 指定编译时默认jdk版本，防止maven update的时变回1.5
