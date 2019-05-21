@@ -48,7 +48,7 @@ public class User {
 >>>>就像上面的例子，作用于类属性。虽说第一次有点代码量，但是只要定义好了，不管新增多少，都可以用一行注解解决。
 
 >>>适用于整个类的
->>>>作用于整个类。在属性级别做不到的就在这里验证。这个验证的通用性就比较差了。估计只能也只有用在一个类上。
+>>>>作用于整个类。在属性级别做不到的就在这里验证。这个验证的通用性就比较差了。估计只能且只有用在一个类上。
 
 # 参考文章
 * [https://docs.jboss.org/hibernate/validator/5.1/reference/en-US/html/validator-customconstraints.html#section-cross-parameter-constraints](https://docs.jboss.org/hibernate/validator/5.1/reference/en-US/html/validator-customconstraints.html#section-cross-parameter-constraints)
