@@ -49,3 +49,4 @@ body {
 ```
 # 兼容性
 不支持IE其他基本都支持
+[https://developer.mozilla.org/en-US/docs/Web/CSS/var](https://developer.mozilla.org/en-US/docs/Web/CSS/var)
