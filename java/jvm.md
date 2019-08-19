@@ -45,3 +45,15 @@ Java虚拟机不是真实的物理机，它没有寄存器，所以指令集是�
     JRuby和JVM上的其他语言项目已经被承认，一个例子是invokedynamic specification（akaJSR292）。JSR越来越配合新的语言，JVM已不再是Java一个人定制规则。JVM正在构建成为类如JRuby等项目的优良平台。还有一个MLVM（multiple languageVM）项目，好比是新特性的清算机构，是一个许多企业应用的开发者试图添加应用的地方，而这些应用正是他们想在JVM中看到的。而且JVM开发者互相协作、彼此影响，无疑这有利于JVM新特性的诞生。这些细节都可以看到JVM正在关注开发者的需求，扩大他的覆盖面。
   </li>
 </ol>
+
+# GC垃圾回收
+## 二、 发现虚拟机频繁full GC时应该怎么办？
+（full GC指的是清理整个堆空间，包括年轻代和永久代）
+
+（1） 首先用命令查看触发GC的原因是什么 jstat –gccause 进程id
+
+（2） 如果是System.gc()，则看下代码哪里调用了这个方法
+
+（3） 如果是heap inspection(内存检查)，可能是哪里执行jmap –histo[:live]命令
+
+（4） 如果是GC locker，可能是程序依赖的JNI库的原因
